@@ -88,6 +88,11 @@
     flex-wrap: wrap;
     border-radius: 50%;
     border: 7px solid lightgray;
+    transition: 0.5s;
+}
+
+.card img:hover{
+    border: 7px solid rgb(250, 195, 188);
 }
 
 .card h3{
