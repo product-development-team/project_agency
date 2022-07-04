@@ -1,6 +1,85 @@
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.container-team{
+    background-color: rgb(242, 242, 242);
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.container-team h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 30px;
+    animation: enterFromLeft 0.9s ease-in;
+    
+}
+
+.container-team p{
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    animation: enterFromLeft 0.9s ease-in;
+}
+
+.card p{
+    margin: 0;
+}
+
+.team{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+    animation: enterFromLeft 0.9s ease-in;
+
+}
+
+.card{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+}
+
+
+.card img{
+    margin-top: 10px ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    border: 7px solid lightgray;
+}
+
+.card h3{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    font-size: 25px;
+}
+
+.card p{
+    opacity: 0.6;
+}
+
+.card-social{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
 .footer {
+    padding: 20px;
     text-align: center;
     font-family: sans-serif;
 }
@@ -43,6 +122,34 @@ a {
     margin: 10px;
 }
 
+.card-social .fa {
+    text-align: center;
+	width: 40px;
+    height: 28px;
+	color: #FFF;
+	background-color: #000;
+	padding-top: 12px;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-o-border-radius: 20px;
+	transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+}
+
+.card-social .fa:hover {
+	transform: scale(1.2,1.2);
+	-moz-transform: scale(1.2,1.2);
+	-webkit-transform: scale(1.2,1.2);
+	-o-transform: scale(1.2,1.2);
+	transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+} 
+
 .ftext {
     display: inline-block;
     margin: 5px;
@@ -57,6 +164,65 @@ a {
 }
 
 
+
+@media screen and (max-width: 782px){
+    .team{
+        flex-direction: column;
+    }
+
+    .container-team p{
+        text-align: center;
+        margin-left: 70px;
+        margin-right: 70px
+    }
+
+    .team{
+        padding-left: 20px;
+        padding-right: 20px;
+    
+    }
+
+    .container-team h2{
+
+    font-size: 40px;}
+
+    .container-team p{
+        font-size: 18px;
+
+    }
+
+    .card h3{
+        font-size: 30px;
+    }
+
+    .card p{
+        font-size: 18px;
+    }
+
+    .card{
+        padding-bottom: 20px;
+        border-bottom: 1px dashed rgb(174, 174, 174);
+    }
+
+
+    
+}
+
+@keyframes enterFromLeft {
+
+    0%{
+        transform: translateX(-100%);
+    }
+
+
+    100%{
+        transform: translateX(0%);
+    }
+    
+
+
+
+}
 @media screen and (min-width: 768px) {
     .footer {
         display: flex;
