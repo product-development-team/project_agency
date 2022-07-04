@@ -5,6 +5,37 @@
     padding: 0;
     
 }
+
+/*****Navbar style*****/
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;   
+}
+.nav-link-left{
+    color:  #fed136;
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.nav-links{
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-right: 50px;
+    list-style-type: none; 
+}
+
+.nav-item a{
+    color: white;
+}
+.nav-item a:hover{
+    color: #fed136;
+}
+
 .container-team{
     background-color: rgb(242, 242, 242);
     width: 100%;
