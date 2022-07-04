@@ -107,20 +107,21 @@
     justify-content: center;
 }
 /*****Brands style*****/
-img{
+.imgbrands{
     margin:0;
     position: relative;
     top: 10%;
-    left: 27%;
+    left: 23%;
     margin-right: auto; 
     margin-left: auto;   
     }
+   
     
     @media  only  screen and (max-width: 768px)
     {
-    img {
+    .imgbrands {
     display: block; 
-    margin-left: 20px;
+    margin-left: 27px;
     margin-right: auto;
     
      
