@@ -5,6 +5,27 @@
     padding: 0;
     
 }
+
+/*****Navbar style*****/
+nav{
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.container-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.list-navigation{
+    list-style-type: none;    
+}
+
+
 .container-team{
     background-color: rgb(242, 242, 242);
     width: 100%;
