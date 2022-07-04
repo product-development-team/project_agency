@@ -106,30 +106,6 @@
     display: flex;
     justify-content: center;
 }
-/*****Brands style*****/
-img{
-    margin:0;
-    position: relative;
-    top: 10%;
-    left: 27%;
-    margin-right: auto; 
-    margin-left: auto;   
-    }
-    
-    @media  only  screen and (max-width: 768px)
-    {
-    img {
-    display: block; 
-    margin-left: 20px;
-    margin-right: auto;
-    
-     
-    }
-    }
-        
-    
-
-/*****footer style*****/
 
 .footer {
     padding: 20px;
