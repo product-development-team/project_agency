@@ -15,9 +15,9 @@
     justify-content: space-between; 
     align-items: center;   
 }
-.nav-link-left{
+.nav-logo{
     color:  #fed136;
-    font-size: larger;
+    font-size: 25px;
     font-weight: bold;
     margin-left: 50px;
 }
@@ -30,11 +30,26 @@
 }
 
 .nav-item a{
-    color: white;
+    color: aliceblue;
 }
 .nav-item a:hover{
     color: #fed136;
 }
+
+
+.menu-line{
+    width: 20px;
+    height: 3px;
+    background-color: #fed136;
+    margin-bottom: 4px;
+    margin-right: 5px;
+}
+
+.menu{
+    display: none;
+}
+
+
 
 .container-team{
     background-color: rgb(242, 242, 242);
@@ -260,5 +275,40 @@ a {
         justify-content: space-around;
         align-items: baseline;
     }
+
+}
+@media screen and (max-width: 780px){
+   .navbar{
+    flex-direction: column;
+    position: relative;
+   }
+   .nav-logo{
+    width: 100%;
+   }
+
+    .menu{
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+   }
+   .nav-links{
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+    
+   }
+   .nav-item a{
+   flex-direction: column;
+   display: flex;
+   gap: 2px;
+   }
+
+   .active{
+    display: block;
+   }
 
 }

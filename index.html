@@ -9,14 +9,19 @@
 </head>
 <body>
     <nav class="navbar">
-     <a href="#" class="nav-link-left">SEYTECH</a>
-        <ul class="nav-links">
+     <a href="#" class="nav-logo">SEYTECH</a>
+        <ul class="nav-links" id="nav-list">
             <li class="nav-item"><a href="#">SERVICES</a></li>
             <li class="nav-item"><a href="#">PORTFOLIO</a></li>
             <li class="nav-item"><a href="#">ABOUT</a></li>
             <li class="nav-item"><a href="#">TEAM</a></li>
             <li class="nav-item"><a href="#">CONTACT</a></li>
-        </ul>   
+        </ul>  
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div> 
     </nav>
 
     <section>
@@ -89,4 +94,12 @@
         </div>
     </footer>
 </body>
+<script>
+    const toggleButton = document.getElementById('toggle-button');
+    const navList = document.getElementById('nav-list');
+
+    toggleButton.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
+</script>
 </html>
