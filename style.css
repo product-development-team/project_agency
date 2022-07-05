@@ -103,6 +103,49 @@ border-radius: 50%;
     }
 
 
+/*****Navbar style*****/
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;   
+}
+.nav-logo{
+    color:  #fed136;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.nav-links{
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-right: 50px;
+    list-style-type: none; 
+}
+
+.nav-item a{
+    color: aliceblue;
+}
+.nav-item a:hover{
+    color: #fed136;
+}
+
+
+.menu-line{
+    width: 20px;
+    height: 3px;
+    background-color: #fed136;
+    margin-bottom: 4px;
+    margin-right: 5px;
+}
+
+.menu{
+    display: none;
+}
+
 
 
 .container-team{
@@ -157,8 +200,19 @@ border-radius: 50%;
     flex-wrap: wrap;
     border-radius: 50%;
     border: 7px solid lightgray;
+    transition: 0.5s;
 }
 
+.card img:hover{
+    border: 7px solid rgb(250, 195, 188);
+}
+.team-lorem{
+    color: dimgray;
+    padding: 0 35px;
+    line-height: 30px;
+    font-size: 1.2rem;
+    font-style:'Montserrat', sans-serif;
+}
 .card h3{
     text-align: center;
     margin-top: 15px;
@@ -175,8 +229,6 @@ border-radius: 50%;
     display: flex;
     justify-content: center;
 }
-
-
 
 .footer {
     padding: 20px;
@@ -262,9 +314,6 @@ a {
 .ftext:hover {
     text-decoration: underline;
 }
-
-
-
 @media screen and (max-width: 782px){
     .team{
         flex-direction: column;
@@ -303,8 +352,6 @@ a {
         padding-bottom: 20px;
         border-bottom: 1px dashed rgb(174, 174, 174);
     }
-
-
     
 }
 
@@ -318,9 +365,6 @@ a {
     100%{
         transform: translateX(0%);
     }
-    
-
-
 
 }
 @media screen and (min-width: 768px) {
@@ -329,5 +373,40 @@ a {
         justify-content: space-around;
         align-items: baseline;
     }
+
+}
+@media screen and (max-width: 780px){
+   .navbar{
+    flex-direction: column;
+    position: relative;
+   }
+   .nav-logo{
+    width: 100%;
+   }
+
+    .menu{
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+   }
+   .nav-links{
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+    
+   }
+   .nav-item a{
+   flex-direction: column;
+   display: flex;
+   gap: 2px;
+   }
+
+   .active{
+    display: block;
+   }
 
 }
