@@ -375,6 +375,51 @@ a {
     }
 
 }
+
+/* form beginning*/
+
+.container-form {
+    background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/world-map-black-and-white-athena-mckinzie.jpg');
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+}
+.container-form h2{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+}
+.container-form p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    opacity: 0.6;
+    margin-top: 20px;
+}
+.container-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+.container-form form input{
+    height: 50px;
+}
+.form-name{
+    grid-column: 1/3;
+}
+.form-email{
+    grid-column: 1/3;
+}
+.form-phone{
+    grid-column: 1/3;
+}
+.form-message{
+    grid-column: 3/5;
+    grid-row: 1/4;
+}
+
+
 @media   screen and (max-width: 768px)
 {
     .flex-container{
