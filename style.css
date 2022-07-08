@@ -319,7 +319,6 @@ border-radius: 50%;
     -moz-transition: all ease 0.5s;
     -webkit-transition: all ease 0.5s;
     -o-transition: all ease 0.5s;
-    border: solid 3px rgb(161, 158, 158);
 }
 
 a {
@@ -599,4 +598,5 @@ form button{
     display: block;
    }
 
+}
 }
