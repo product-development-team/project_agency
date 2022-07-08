@@ -4,6 +4,51 @@
     margin: 0;
     padding: 0;
 }
+.hero-image{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://img.freepik.com/free-photo/dark-wooden-table-with-laptop-notepad-top-view_93675-44090.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text{
+    color:rgb(246, 245, 241);
+    text-align: center;
+    
+}
+.hero-text h1{
+    font-size: 30px;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 20px;
+}
+.hero-text h2{
+    font-size:40px;
+    font-weight:500;
+    line-height: 10px;
+    font-weight:bold;
+    margin-top: 30px;
+}
+.hero-btn{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+    background: rgb(247, 213, 60);
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display:inline-block;
+    margin-top: 40px;
+}
+.hero-btn:hover{
+    background:rgb(253, 230, 25); 
+    color:white;
+}
+
+
 .heading-service{
     text-align: center;
     font-size: 40px;
