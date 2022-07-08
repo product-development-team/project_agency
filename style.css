@@ -376,35 +376,58 @@ a {
 
 }
 
-/* form beginning*/
+/* form begin*/
 
 .container-form {
-    background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/world-map-black-and-white-athena-mckinzie.jpg');
-    height: 700px;
+    background-image: url('https://cdn11.bigcommerce.com/s-yqkp4d/images/stencil/2048x2048/products/5284/7427/bw_mural__05436.1453158303.jpg');
+    
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 70px;
+    padding-top: 50px;
+    filter: contrast(black);
+    padding-bottom: 50px;
+    max-width: 100%;
 }
+
 .container-form h2{
     text-align: center;
     color: white;
     font-size: 45px;
+    margin-bottom: 0;
 }
+
 .container-form p{
     text-align: center;
     color: white;
-    font-size: 25px;
-    opacity: 0.6;
-    margin-top: 20px;
+    font-size: 20px;
+    opacity: 0.75;
+    margin-bottom: 30px;
 }
-.container-form form{
+
+
+form{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.subform{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
 }
+
 .container-form form input{
     height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
 }
+
+.container-form form textarea{
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+}
+
 .form-name{
     grid-column: 1/3;
 }
@@ -419,6 +442,65 @@ a {
     grid-row: 1/4;
 }
 
+.div-btn{
+    grid-column: 2/4;
+    display: flex;
+    justify-content: center;
+}
+
+form button{
+    width: 150px;
+    padding: 20px;
+    background-color: gold;
+    border-radius: 7px;
+    color: white;
+    border: none;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 768px){
+    form{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+
+    .form-name{
+        grid-column: 1/5;
+    }
+    .form-email{
+        grid-column: 1/5;
+    }
+    .form-phone{
+        grid-column: 1/5;
+    }
+    .form-message{
+        grid-column: 1/5;
+        grid-row: 4/6;
+    }
+
+    .form-message{
+        height: 100px;
+    }
+
+    .container-form h2{
+        font-size: 35px;
+
+    }
+
+    .container-form p{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    form{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    /* form end*/
 
 @media   screen and (max-width: 768px)
 {
