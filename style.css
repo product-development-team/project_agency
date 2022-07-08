@@ -48,7 +48,9 @@
     color:white;
 }
 
-
+.servicewrapper{
+    padding: 70px 0;
+}
 .heading-service{
     text-align: center;
     font-size: 40px;
