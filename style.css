@@ -224,7 +224,7 @@ border-radius: 50%;
      display: block;
      position: fixed;
      right: 15px;
-     top: 8px;
+     top: 7px;
     }
     .nav-links{
      flex-direction: column;
@@ -244,7 +244,7 @@ border-radius: 50%;
     }
     .active{
      display: block;
-     background: #fed136;
+     background: #bb9c29;
     }
     .active .nav-logo{
         color:rgb(242, 242, 242);
