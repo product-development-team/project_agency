@@ -150,14 +150,16 @@ border-radius: 50%;
     }
 
 
-/*****Navbar style*****/
+/* Navbar style starts */
+
 .navbar{
     position: fixed;
     width: 100%;
     background-color: transparent;
     display: flex;
     justify-content: space-between; 
-    align-items: center;   
+    align-items: center;  
+    z-index: 1;
 }
 .nav-logo{
     color:  #fed136;
@@ -174,24 +176,90 @@ border-radius: 50%;
 }
 
 .nav-item a{
-    color: aliceblue;
+    color: rgb(242, 242, 242);
 }
+
 .nav-item a:hover{
     color: #fed136;
 }
 
-
 .menu-line{
     width: 20px;
-    height: 3px;
+    height: 2px;
     background-color: #fed136;
     margin-bottom: 4px;
-    margin-right: 5px;
+    margin-right: 10px;  
 }
 
 .menu{
     display: none;
 }
+
+.active{
+    background: #fed136;
+}
+
+.active .nav-item a:hover{
+    color: rgb(242, 242, 242);
+}
+
+.active .nav-logo{
+    color:rgb(242, 242, 242);
+}
+
+
+/*Responsive UI for Navbar*/
+
+@media screen and (max-width: 780px){
+    .navbar{
+     flex-direction: column;
+     position: fixed;
+    }
+    
+    .nav-logo{
+     width: 100%;
+    }
+ 
+     .menu{
+     display: block;
+     position: fixed;
+     right: 15px;
+     top: 8px;
+    }
+    .nav-links{
+     flex-direction: column;
+     list-style-type: none;
+     position: fixed;
+     width: 100%;
+     text-align: center;
+     padding-top: 10px;
+     display: none;
+    }
+
+    .nav-item a{
+    display: block;
+    align-items: center;
+    gap: 2px;
+    color: rgb(242, 242, 242);
+    }
+    .active{
+     display: block;
+     background: #fed136;
+    }
+    .active .nav-logo{
+        color:rgb(242, 242, 242);
+    }
+    .active .menu-line{
+        width: 20px;
+        height: 3px;
+        background-color: white;
+        margin-bottom: 4px;
+        margin-right: 5px;  
+    }
+
+
+ }
+ /*navbar ends*/
 
 /* portfolio start */
 .portfolio {
@@ -652,6 +720,7 @@ form button{
     }
 
     /* form end*/
+}
 
 @media   screen and (max-width: 768px)
 {
@@ -670,40 +739,4 @@ form button{
         align-items: baseline;
     }
 
-}
-@media screen and (max-width: 780px){
-   .navbar{
-    flex-direction: column;
-    position: relative;
-   }
-   .nav-logo{
-    width: 100%;
-   }
-
-    .menu{
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-   }
-   .nav-links{
-    flex-direction: column;
-    list-style-type: none;
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
-    display: none;
-    
-   }
-   .nav-item a{
-   flex-direction: column;
-   display: flex;
-   gap: 2px;
-   }
-
-   .active{
-    display: block;
-   }
-
-}
 }

@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agency</title>
     <link rel="stylesheet" href="./style.css">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+
 <body>
+    <!--NavBar starts-->
     <nav class="navbar">
         <a href="#" class="nav-logo">SEYTECH</a>
            <ul class="nav-links" id="nav-list">
@@ -23,8 +25,9 @@
                <div class="menu-line"></div>
                <div class="menu-line"></div>
            </div> 
-       </nav>
-       <section>
+    </nav>
+<!--NavBar ends-->
+    <section>
         <div class="hero-image">
             <div class="hero-text">
                 <h1>Welcome To Our Studio!</h1>
@@ -32,8 +35,9 @@
                 <a href="#" class="hero-btn">TELL ME MORE</a>
             </div>
         </div>
-       </section>
-       <section>
+    </section>
+
+    <section>
         <div class="servicewrapper">
         <h2 class="heading-service">Services</h2>
         <div class="subheading">Lorem ipsum dolor sit amet consectetur.</div>
@@ -55,7 +59,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
         </div>
     </div>
-</div>
+ </div>
     </section>
 <!-- portfolio start -->
 <section class="portfolio">
@@ -200,6 +204,7 @@
         </div>
     </footer>
 </body>
+<!--NavBar scripts-->
 <script>
     const toggleButton = document.getElementById('toggle-button');
     const navList = document.getElementById('nav-list');
@@ -207,5 +212,18 @@
     toggleButton.addEventListener('click', () => {
         navList.classList.toggle('active');
     });
+</script>
+<script>
+    $(document).ready(function(){
+        $(window).bind('scroll',function(){
+            var gap = 50;
+            if($(window).scrollTop() > gap){
+                $('nav').addClass('active');
+
+            }else{
+                $('nav').removeClass('active');
+            }
+        })
+    })
 </script>
 </html>
