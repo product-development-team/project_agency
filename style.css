@@ -9,7 +9,7 @@ body{
     font-family: sans-serif
  
     }
-    
+   
 .hero-image{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://img.freepik.com/free-photo/dark-wooden-table-with-laptop-notepad-top-view_93675-44090.jpg);
     background-position:center;
@@ -28,7 +28,7 @@ body{
 .hero-text h1{
     font-size: 30px;
     font-weight: 500;
-    font-style: italic;
+    font-style: italic !important;
     margin-top: 20px;
 }
 .hero-text h2{
